@@ -1,9 +1,11 @@
-# Reproducibility challenge
+# Frameworks for Reproducible Machine Learning
 
+In this work we compare three frameworks, that assist in reproducing results in Machine Learning: **wandb**, **guild.ai** and **mlflow**. We empirically compare their performance on a number of experiments and conduct a *decision tree* that takes as an input the most important features for the query. Moreover, we address the definition of the *reproducibility* in the context of the Neural Networks and argue about the possibility of the *replicating* the results using Docker framework for Neural Networks. We conclude our work by compiling the decision tree and drawing the conclusions from our findings.
 
-One of the challenges in machine learning research is to ensure that published results are reliable and reproducible. For that reason, a number of frameworks (such as i.e. mlflow, wandb and others) is used for tracking the hyperparameters. By doing so, we expect the results to be reproducible in machiene learning workflows. 
+The full tree of the framework choice, depending on the most important input criteria is presented below:  
 
-The challenge also arises as some of the algorithms in tensorflow/keras are [reported](https://stackoverflow.com/questions/50659482/why-cant-i-get-reproducible-results-in-keras-even-though-i-set-the-random-seeds) to involve the randomness despite the established seed in the code. To investigate that matter, we empirically compare the named frameworks and highlight the usability points of each of them. 
+![decision tree](./Decision%20tree/frameworks-allleaves-tree.svg)
 
-Namely, for a number of algorithms we aim to find the answer “Which Framework is most suitable for this kind of task?” 
+It is possible to manipulate the number of leaves in the notebook. For instance, the 8-leaf version is presented below:
 
+![decision tree](./Decision%20tree/frameworks-8leaves-tree.svg)
